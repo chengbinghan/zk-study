@@ -20,7 +20,7 @@ public class ZkTest {
 
     public static void main(String[] args) throws Exception {
 
-
+        //参数watcher的值可以为null, 不添表明加watcher
         ZooKeeper zk = new ZooKeeper(url, 3000, new Watcher() {
 
             @Override
